@@ -1,0 +1,102 @@
+.block{
+    @apply lg:col-span-1 col-span-3 min-w-0 p-4 bg-white rounded-lg m-5 px-4 py-4 shadow-md mb-auto
+}
+:global(.dark) .block {
+    @apply bg-gray-700 text-white;
+  }
+
+.block{
+    min-height: 37em;
+}
+
+.titlebar{
+    @apply bg-gray-200 rounded-lg -m-4 h-auto
+}
+
+:global(.dark) .block {
+    @apply bg-darker text-white;
+  }
+
+  :global(.dark) .titlebar {
+    @apply bg-gray-700 text-white;
+  }
+:global(.dark) .subtitle {
+    @apply bg-gray-700 text-white;
+  }
+:global(.dark) .bottomcadeira {
+    @apply bg-gray-700 text-white;
+  }
+
+
+
+.title{
+    @apply bg-primary w-auto px-4 text-center rounded-lg text-white h-10 align-middle py-2
+}
+
+.subtitle{
+    @apply bg-gray-200 text-center text-xs align-top px-4 py-1 w-auto h-auto
+}
+
+.content{
+    @apply mt-8 rounded-lg text-sm
+}
+
+.CalendarMonth{
+    @apply mb-8 text-center text-lg
+}
+
+.Calendar{
+    @apply grid grid-cols-7 gap-2 border-b-2 border-gray-200 -m-4 mb-3 px-1 pb-4
+}
+
+.CalendarBar{
+    @apply col-span-1 rounded-lg h-14 text-xs xl:text-sm
+}
+
+.CalendarBarActive{
+    @apply col-span-1 rounded-lg h-14 text-xs xl:text-sm bg-primary text-white
+}
+
+// .CalendarBar:first-child{
+//     @apply sm:block lg:hidden xl:block
+// }
+
+// .CalendarBar:last-child{
+//     @apply sm:block lg:hidden xl:block
+// }
+
+.CalendarBar:active{
+    @apply bg-primary text-white
+}
+
+// .CalendarWeek{
+//     @apply
+// }
+
+// .CalendarDay{
+//     @apply
+// }
+
+.Cadeiras {
+    @apply grid grid-cols-1 gap-6 p-3 overflow-y-auto h-[22em]
+}
+
+.Cadeira{
+    @apply rounded-lg text-white mx-4 lg:mx-2
+}
+
+.CadeiraErro{
+    @apply rounded-lg m-auto text-lg text-center
+}
+
+.CadeiraInfo{
+    @apply rounded-lg bg-terciary p-4
+}
+
+.TipoAula{
+    @apply bg-gray-200 text-black text-center text-xs py-1 w-auto h-auto rounded-lg
+}
+
+.BotaoHorario{
+    @apply rounded-lg bg-primary text-white mt-8 p-1 px-4 mx-auto block
+}

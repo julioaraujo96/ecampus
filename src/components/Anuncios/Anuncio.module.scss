@@ -1,0 +1,58 @@
+.block{
+    @apply col-span-3 min-w-0 p-4 bg-white rounded-lg m-5 px-4 py-4 shadow-md mb-auto
+}
+
+:global(.dark) .block {
+    @apply bg-darker text-white;
+  }
+
+  :global(.dark) .titlebar {
+    @apply bg-gray-700 text-white;
+  }
+:global(.dark) .subtitle {
+    @apply bg-gray-700 text-white;
+  }
+:global(.dark) .bottomcadeira {
+    @apply bg-gray-700 text-white;
+  }
+
+
+.block{
+    min-height: 16em;
+}
+
+.titlebar{
+    @apply bg-gray-200 rounded-lg -m-4 h-auto
+}
+
+.title{
+    @apply bg-primary w-auto px-4 text-center rounded-lg text-white h-10 align-middle py-2
+}
+
+.subtitle{
+    @apply bg-gray-200 text-center text-xs align-top px-4 py-1 w-auto h-auto
+}
+
+.content{
+    @apply mt-8 rounded-lg text-sm
+}
+
+.Anuncio{
+    @apply mb-2 border-b-2 mt-8
+}
+
+.AnuncioTitle{
+    @apply font-bold text-lg bg-primary text-white p-1 mb-3 rounded-xl px-4 shadow-sm
+}
+
+.AnuncioTitle{
+    width: fit-content;
+}
+
+.AnuncioText{
+    @apply mb-6
+}
+
+.AnuncioText:last-child{
+    @apply mb-0 text-xs
+}

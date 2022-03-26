@@ -1,0 +1,81 @@
+.block{
+    @apply lg:col-span-2 col-span-3 min-w-0 p-4 bg-white rounded-lg m-5 px-4 py-4 shadow-md mb-auto
+}
+
+.block{
+    min-height: 37em;
+}
+
+:global(.dark) .block {
+    @apply bg-darker text-white;
+  }
+
+  :global(.dark) .titlebar {
+    @apply bg-gray-700 text-white;
+  }
+:global(.dark) .subtitle {
+    @apply bg-gray-700 text-white;
+  }
+:global(.dark) .bottomcadeira {
+    @apply bg-gray-700 text-white;
+  }
+
+.titlebar{
+    @apply bg-gray-200 rounded-lg -m-4 h-auto
+}
+
+.title{
+    @apply bg-primary w-auto px-4 text-center rounded-lg text-white h-10 align-middle py-2
+}
+
+.subtitle{
+    @apply bg-gray-200 text-center text-xs align-top px-4 py-1 w-auto h-auto
+}
+
+.content{
+    @apply mt-4 rounded-lg text-sm
+}
+
+.topbanner{
+    @apply p-4 border-b-2 border-gray-200 grid grid-cols-2 gap-2 -m-4 mb-5
+}
+
+.topcoordenador{
+    @apply lg:col-span-1 col-span-2 flex
+}
+
+.topcoordenador_image{
+    @apply flex-none w-24 h-24 bg-gray-400 rounded-full bg-coordenador bg-cover bg-no-repeat bg-center
+}
+
+.topcoordenador_title{
+    @apply m-auto ml-5
+}
+
+.topcadeiras{
+    @apply lg:col-span-1 col-span-2 flex
+}
+
+.topcadeiras_progress{
+    @apply flex-none w-24 h-24 rounded-full
+}
+
+.topcadeiras_title{
+    @apply m-auto ml-5
+}
+
+.bottomcurso{
+    @apply text-primary
+}
+
+.bottomcadeiras{
+    @apply p-3 h-[23em] overflow-y-auto
+}
+
+.bottomcadeira{
+    @apply bg-gray-100 rounded-lg m-2 p-3
+}
+
+.bottomcadeira div{
+    @apply text-yellow-500
+}

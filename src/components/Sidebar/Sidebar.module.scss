@@ -1,0 +1,67 @@
+.menuButton
+{
+    @apply block py-2.5 px-4 rounded transition duration-200 hover:opacity-50 hover:text-white text-left
+}
+
+.menuButtonMob{
+    @apply block py-1.5 px-4 rounded transition duration-200 hover:opacity-50 hover:text-white text-left w-max
+}
+
+svg{
+    @apply inline mr-2
+}
+
+.ISMAIlogoNav{
+    @apply bg-logoISMAI bg-cover w-20 h-20
+}
+
+.mobileNav{
+    @apply bg-primary text-gray-100 flex justify-between md:hidden
+}
+
+.sidebar
+{
+    @apply bg-gradient-to-r from-terciary to-primary text-blue-100 w-52 space-y-6 py-7 px-2 absolute inset-y-0 left-0 min-h-screen transform -translate-x-full md:fixed md:translate-x-0 transition duration-200 ease-in-out
+}
+
+.logoblock{
+    @apply relative
+}
+
+.ISMAIlogo{
+    @apply relative bg-logoISMAI bg-cover w-40 h-40 mx-auto
+}
+
+.btnIsmai
+{
+   @apply text-white items-center space-x-2 px-4 mx-auto block -mt-8
+}
+
+.txtIsmai{
+    @apply text-center font-bold
+}
+
+.txtIsmai_sec{
+    @apply text-center mx-auto block font-bold
+}
+
+.subMenu{
+    @apply block justify-center bg-primary border-t-2 border-terciary text-white
+}
+
+.darkmodeIconMobile{
+    @apply ml-auto mr-2
+}
+
+@media (max-width:768px)  {
+    .sidebar
+    {
+        @apply hidden
+    }
+}
+
+@media (min-width:768px)  {
+    .subMenu{
+        @apply hidden
+    }
+}
